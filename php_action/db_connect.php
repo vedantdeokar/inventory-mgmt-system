@@ -3,9 +3,9 @@
 $localhost = "localhost";
 $username = "root";
 $password = "root";
-$dbname = "inventory";
+$dbname = "inventorydb";
 
-$connect = new mysqli($localhost, $username, $password, $dbname);
+$connect = new mysqli("localhost", "root", "", "inventorydb");
 
 if($connect->connect_error) {
 	die("Connection Failed : " . $connect->connect_error);
